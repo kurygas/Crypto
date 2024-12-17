@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RandomGenerator</class>
+ <widget class="QDialog" name="RandomGenerator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ГПСЧ</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Введите коэффициенты многочлена:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="3" column="1">
+       <widget class="QLabel" name="pLabel">
+        <property name="text">
+         <string>p = </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="aLabel">
+        <property name="text">
+         <string>a = </string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="bEdit"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="bLabel">
+        <property name="text">
+         <string>b = </string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>c = </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="aEdit"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="pEdit"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="cEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="calcButton">
+     <property name="text">
+      <string>Вычислить</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="polynom">
+     <property name="text">
+      <string>φ(x) = </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="qLabel1">
+     <property name="text">
+      <string>Q1* = </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="qLabel2">
+     <property name="text">
+      <string>Q2* = </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <attribute name="headerVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string notr="true">1</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
